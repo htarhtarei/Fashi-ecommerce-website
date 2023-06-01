@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashi Ecommerce Shop</title>
+    <link rel="shortcut icon" href="/asset/images/favicon.jpg" type="image/x-icon">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- remix icon link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="/asset/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar-container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+                <div class="container-md container d-flex text-white justify-content-between">
+                    <div class="logo">
+                        <h2>Fashi</h2>
+                    </div>
+                    <button class="navbar-toggler btn-warning btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-warning" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Collection</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Pages</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-group">
+                        <i class="ri-heart-3-line"></i>
+                        <i class="ri-shopping-bag-line"></i>
+                        <i class="ri-user-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home__section">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background: url(/asset/images/homebg1.webp); background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;">
+                            <div class="container-md home__content">
+                                <div class="">
+                                    <h5 class="subtitle">BAG,KIDS</h5>
+                                    <h1 class="title pb-3">Black Friday</h1>
+                                    <p class="text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    <p class="text-muted">Eum modi commodi, ad, placeat assumenda, ullam </p>
+                                    <p class="text-muted mb-5 ">hic atque facilis corrupti odio temporibus nihil deleniti </p>
+                                    <a href="# " class="btn-shop">SHOP NOW</a>
+                                </div>
+                            </div>
+                            <div class="sale d-flex justify-content-center align-items-center">
+                                <div class="sale-50">
+                                    <h2>Sale</h2>
+                                    <h2>50%</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="background: url(/asset/images/homebg2.webp); background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;">
+                            <div class="container-md home__content">
+                                <div class="">
+                                    <h5 class="subtitle">BAG,KIDS</h5>
+                                    <h1 class="title pb-3">Black Friday</h1>
+                                    <p class="text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    <p class="text-muted">Eum modi commodi, ad, placeat assumenda, ullam </p>
+                                    <p class="text-muted mb-5 ">hic atque facilis corrupti odio temporibus nihil deleniti </p>
+                                    <a href="# " class="btn-shop">SHOP NOW</a></div>
+                            </div>
+                            <div class="sale d-flex justify-content-center align-items-center">
+                                <div class="sale-50">
+                                    <h2>Sale</h2>
+                                    <h2>50%</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev " type="button " data-bs-target="#carouselExample " data-bs-slide="prev ">
+                      <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                      <span class="visually-hidden ">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button " data-bs-target="#carouselExample " data-bs-slide="next ">
+                      <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                      <span class="visually-hidden ">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="collection" class="container">
+            <div class="collection__section row grid ">
+                <div class="collection__card col-4">
+                    <img src="/asset/images/banner-1.jpg.webp" alt="img">
+                    <div class="collection__btn-box">
+                        <a href="" class="collection__btn">Men's</a>
+                    </div>
+                </div>
+                <div class="collection__card col-4">
+                    <img src="/asset/images/banner-2.jpg.webp" alt="img">
+                    <div class="collection__btn-box">
+                        <a href="" class="collection__btn">Women's</a>
+                    </div>
+                </div>
+                <div class="collection__card col-4">
+                    <img src="/asset/images/banner-3.jpg.webp" alt="img">
+                    <div class="collection__btn-box">
+                        <a href="" class="collection__btn">Kid's</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="women" class="container-md">
+            <div class="women__section row">
+                <div class="women__img col-3">
+                    <!-- <img src="/asset/images/women-large.jpg.webp" alt="women"> -->
+                    <div class="women__img-detail">
+                        <h3>Women's</h3>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="women__content col-8 offset-1">
+                    <div class="">
+                        <ul class="women__menu-list">
+                            <li class="women__menu-item">
+                                <a href="#" class="active">Clothings</a>
+                            </li>
+                            <li class="women__menu-item">
+                                <a href="#">HandBags</a>
+                            </li>
+
+                            <li class="women__menu-item">
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li class="women__menu-item">
+                                <a href="#">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="women__card-group swiper-wrapper pb-5">
+                            <div class="women__card swiper-slide">
+                                <img src="/asset/images/women-1.jpg.webp" alt="women">
+                                <i class="ri-heart-3-line heart"></i>
+
+                                <div class="women__icons">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                    <i class="ri-file-list-2-line"></i>
+                                </div>
+                                <div class="women__detail text-center pt-3">
+                                    <h6 class="fs-6 text-muted">Coat</h6>
+                                    <p class="fs-5">Pineapple</p>
+                                    <p class="fs-5 text-warning fw-bolder">$140.0</p>
+                                </div>
+                            </div>
+                            <div class="women__card swiper-slide">
+                                <img src="/asset/images/women-2.jpg.webp" alt="women">
+                                <i class="ri-heart-3-line heart"></i>
+
+                                <div class="women__icons">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                    <i class="ri-file-list-2-line"></i>
+                                </div>
+                                <div class="women__detail text-center pt-3">
+                                    <h6 class="fs-6 text-muted">Crop Sweater</h6>
+                                    <p class="fs-5">Cross Glowsin</p>
+                                    <p class="fs-5 text-warning fw-bolder">$220.0</p>
+                                </div>
+                            </div>
+                            <div class="women__card swiper-slide">
+                                <img src="/asset/images/women-3.jpg.webp" alt="women">
+                                <i class="ri-heart-3-line heart"></i>
+
+                                <div class="women__icons">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                    <i class="ri-file-list-2-line"></i>
+                                </div>
+                                <div class="women__detail text-center pt-3">
+                                    <h6 class="fs-6 text-muted">Sweater</h6>
+                                    <p class="fs-5">Goufagg sweater</p>
+                                    <p class="fs-5 text-warning fw-bolder">$230.0</p>
+                                </div>
+                            </div>
+                            <div class="women__card swiper-slide">
+                                <img src="/asset/images/women-4.jpg.webp" alt="women">
+                                <i class="ri-heart-3-line heart"></i>
+                                <div class="women__icons">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                    <i class="ri-file-list-2-line"></i>
+                                </div>
+                                <div class="women__detail text-center pt-3">
+                                    <h6 class="fs-6 text-muted">Handbag</h6>
+                                    <p class="fs-5">Crochet Bag</p>
+                                    <p class="fs-5 text-warning fw-bolder">$500.0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="swiper-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="week" class="container-md">
+            <div class="week__section row" style=" background: url(/asset/images/time-bg.jpg.webp);
+            background-repeat: no-repeat;
+            background-position: center;height:100vh">
+                <div class="week__content col-6 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h3 class="fs-2 fw-bolder">Deal Of The Week</h3>
+                        <p class="text-muted fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus consequuntur aut incidunt id dolor voluptates dolores amet, quos magni.</p>
+                        <p class="fs-4 text-warning pb-4">$35.00 / <span class="fs-6 text-muted">HanBag</span></p>
+                        <div class="time-calculate d-flex justify-content-center">
+                            <div class="day">
+                                <span class="d-block fs-6 text-muted">DAYS</span>
+                            </div>
+                            <div class="hrs">
+                                <span class="d-block fs-6 text-muted">HRS</span>
+                            </div>
+                            <div class="min">
+                                <span class="d-block fs-6 text-muted">MINS</span>
+                            </div>
+                            <div class="sec">
+                                <span class="d-block fs-6 text-muted">SECS</span>
+                            </div>
+                        </div>
+                        <a href="" class="btn-shop">SHOP NOW</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="men" class="container-md">
+            <div class="men__section row">
+                <div class="women__content col-8">
+                    <div class="">
+                        <ul class="women__menu-list">
+                            <li class="women__menu-item">
+                                <a href="#" class="active">Clothings</a>
+                            </li>
+                            <li class="women__menu-item">
+                                <a href="#">HandBags</a>
+                            </li>
+
+                            <li class="women__menu-item">
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li class="women__menu-item">
+                                <a href="#">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="women__card-group swiper-wrapper pb-5">
+                            <div class="women__card swiper-slide">
+                                <img src="/asset/images/man-1.jpg.webp" alt="women">
+                                <i class="ri-heart-3-line heart"></i>
+
+                                <div class="women__icons">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                    <i class="ri-file-list-2-line"></i>
+                                </div>
+                                <div class="women__detail text-center pt-3">
+                                    <h6 class="fs-6 text-muted">Coat</h6>
+                                    <p class="fs-5">Pineapple</p>
+                                    <p class="fs-5 text-warning fw-bolder">$140.0</p>
+                                </div>
+                            </div>
+                            <div class="women__card swiper-slide">
+                                <img src="/asset/images/man-2.jpg.webp" alt="women">
+                                <i class="ri-heart-3-line heart"></i>
+
+                                <div class="women__icons">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                    <i class="ri-file-list-2-line"></i>
+                                </div>
+                                <div class="women__detail text-center pt-3">
+                                    <h6 class="fs-6 text-muted">Crop Sweater</h6>
+                                    <p class="fs-5">Cross Glowsin</p>
+                                    <p class="fs-5 text-warning fw-bolder">$220.0</p>
+                                </div>
+                            </div>
+                            <div class="women__card swiper-slide">
+                                <img src="/asset/images/man-3.jpg.webp" alt="women">
+                                <i class="ri-heart-3-line heart"></i>
+
+                                <div class="women__icons">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                    <i class="ri-file-list-2-line"></i>
+                                </div>
+                                <div class="women__detail text-center pt-3">
+                                    <h6 class="fs-6 text-muted">Sweater</h6>
+                                    <p class="fs-5">Goufagg sweater</p>
+                                    <p class="fs-5 text-warning fw-bolder">$230.0</p>
+                                </div>
+                            </div>
+                            <div class="women__card swiper-slide">
+                                <img src="/asset/images/man-4.jpg.webp" alt="women">
+                                <i class="ri-heart-3-line heart"></i>
+                                <div class="women__icons">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                    <i class="ri-file-list-2-line"></i>
+                                </div>
+                                <div class="women__detail text-center pt-3">
+                                    <h6 class="fs-6 text-muted">Handbag</h6>
+                                    <p class="fs-5">Crochet Bag</p>
+                                    <p class="fs-5 text-warning fw-bolder">$500.0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="swiper-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="men__img col-3 offset-1">
+                    <div class="men__img-detail">
+                        <h3>Men's</h3>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instragram" class="container-fluid">
+            <div class="instragram__section">
+                <div class="instra__imgs row">
+                    <div class="instra__img position-relative col-lg-2" style="background:url(/asset/images/insta-1.jpg.webp);">
+                        <div class="img-wrapper">
+                            <div class="img-detail text-white text-center">
+                                <i class="ri-camera-line fs-2 fw-light"></i>
+                                <p class="fs-5 fw-light">collorid-Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instra__img position-relative col-lg-2" style="background:url(/asset/images/insta-2.jpg.webp);">
+                        <div class="img-wrapper">
+                            <div class="img-detail text-white text-center">
+                                <i class="ri-camera-line fs-2 fw-light"></i>
+                                <p class="fs-5 fw-light">collorid-Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instra__img position-relative col-lg-2" style="background:url(/asset/images/insta-3.jpg.webp);">
+                        <div class="img-wrapper">
+                            <div class="img-detail text-white text-center">
+                                <i class="ri-camera-line fs-2 fw-light"></i>
+                                <p class="fs-5 fw-light">collorid-Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instra__img position-relative col-lg-2" style="background:url(/asset/images/insta-4.jpg.webp);">
+                        <div class="img-wrapper">
+                            <div class="img-detail text-white text-center">
+                                <i class="ri-camera-line fs-2 fw-light"></i>
+                                <p class="fs-5 fw-light">collorid-Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instra__img position-relative col-lg-2" style="background:url(/asset/images/insta-5.jpg.webp);">
+                        <div class="img-wrapper">
+                            <div class="img-detail text-white text-center">
+                                <i class="ri-camera-line fs-2 fw-light"></i>
+                                <p class="fs-5 fw-light">collorid-Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instra__img position-relative col-lg-2" style="background:url(/asset/images/insta-6.jpg.webp);">
+                        <div class="img-wrapper">
+                            <div class="img-detail text-white text-center">
+                                <i class="ri-camera-line fs-2 fw-light"></i>
+                                <p class="fs-5 fw-light">collorid-Collection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class=" container-md">
+            <div class="blog__section">
+                <h2 class="fs-1 text-capitalize text-center mb-5 fw-bolder">From the blog</h2>
+
+                <div class="card-group row mx-5">
+                    <div class="card col-md-4 border-0">
+                        <img src="/asset/images/latest-1.jpg.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-icons d-flex pb-3">
+                                <span class="pe-4 d-flex align-items-center text-muted fs-7"><i class="ri-calendar-line text-warning pe-1 fs-5"></i> 31 May 2023</span>
+                                <span class=" d-flex align-items-center text-muted fs-7"><i class="ri-chat-1-line text-warning pe-1 fs-5"></i> 5</span>
+                            </div>
+                            <div class="card-text">
+                                <h3 class=" fs-4">The Best Street Style From London Fashion Week</h3>
+                                <p class="text-muted fs-7">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 border-0">
+                        <img src="/asset/images/latest-2.jpg.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-icons d-flex pb-3">
+                                <span class="pe-4 d-flex align-items-center text-muted fs-7"><i class="ri-calendar-line text-warning pe-1 fs-5"></i> 22 April 2023</span>
+                                <span class=" d-flex align-items-center text-muted fs-7"><i class="ri-chat-1-line text-warning pe-1 fs-5"></i> 23</span>
+                            </div>
+                            <div class="card-text">
+                                <h3 class=" fs-4">Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes</h3>
+                                <p class="text-muted fs-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 border-0">
+                        <img src="/asset/images/latest-3.jpg.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-icons d-flex pb-3">
+                                <span class="pe-4 d-flex align-items-center text-muted fs-7"><i class="ri-calendar-line text-warning pe-1 fs-5"></i> 10 March 2023</span>
+                                <span class=" d-flex align-items-center text-muted fs-7"><i class="ri-chat-1-line text-warning pe-1 fs-5"></i> 15</span>
+                            </div>
+                            <div class="card-text">
+                                <h3 class=" fs-4">How To Brighten Your Wardrobe With A Dash Of Lime</h3>
+                                <p class="text-muted fs-7">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="delivers m-5 row">
+                    <div class="deli d-flex align-items-center col-md-4 border py-4 justify-content-center">
+                        <img src="/asset/images/icon-1.png.webp" alt="icon">
+                        <div class="deli-detail ps-4 pt-3">
+                            <h5 class="fs-6 fw-libold">FREE SHIPPING</h5>
+                            <p class="fs-7 text-muted">For all order over 99$</p>
+                        </div>
+                    </div>
+                    <div class="deli d-flex align-items-center col-md-4 border py-4 justify-content-center">
+                        <img src="/asset/images/icon-2.png.webp" alt="icon">
+                        <div class="deli-detail ps-4 pt-3">
+                            <h5 class="fs-6 fw-libold">DELIVERY ON TIME</h5>
+                            <p class="fs-7 text-muted">If good have prolems</p>
+                        </div>
+                    </div>
+                    <div class="deli d-flex align-items-center col-md-4 border py-4 justify-content-center">
+                        <img src="/asset/images/icon-1.png.webp" alt="icon">
+                        <div class="deli-detail ps-4 pt-3">
+                            <h5 class="fs-6 fw-libold">SECURE PAYMENT</h5>
+                            <p class="fs-7 text-muted">100% secure payment
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="logo" class="container-fluid">
+            <div class="logo__section swiper myLogo">
+                <div class="logos swiper-wrapper">
+                    <img src="/asset/images/logo-1.png.webp" alt="icon" class="swiper-slide">
+                    <img src="/asset/images/logo-2.png.webp" alt="icon" class="swiper-slide">
+                    <img src="/asset/images/logo-3.png.webp" alt="icon" class="swiper-slide">
+                    <img src="/asset/images/logo-4.png.webp" alt="icon" class="swiper-slide">
+                    <img src="/asset/images/logo-5.png.webp" alt="icon" class="swiper-slide">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__section row ">
+            <div class="address col-md-3">
+                <div class="footer-logo">
+                    <h2>Fashi</h2>
+                </div>
+                <ul class="text-muted pt-3">
+                    <li class="pb-3 fs-6">Address: 60-49 Road 11378 New York</li>
+                    <li class="pb-3 fs-6">Phone: +65 11.188.888</li>
+                    <li class="pb-5 fs-6">Email: hello.colorlib@gmail.com</li>
+                    <li class="socail">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-twitter-line"></i></a>
+                        <a href="#"><i class="ri-pinterest-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="information ms-4 col-md-2">
+                <h4 class="fs-5 fw-libold">Information</h4>
+                <ul class=" text-muted pt-3">
+                    <li class="pb-3 fs-6">About Us</li>
+                    <li class="pb-3 fs-6">Checkout</li>
+                    <li class="pb-3 fs-6">Contact</li>
+                    <li class="pb-3 fs-6">Serivius</li>
+                </ul>
+            </div>
+            <div class="contact ms-4 col-md-2">
+                <h4 class="fs-5 fw-libold">My Account</h4>
+                <ul class=" text-muted pt-3">
+                    <li class="pb-3 fs-6">My Account</li>
+                    <li class="pb-3 fs-6">Contact</li>
+                    <li class="pb-3 fs-6">Shopping Cart</li>
+                    <li class="pb-3 fs-6">Shop</li>
+                </ul>
+            </div>
+            <div class="join col-4">
+                <h4 class="fs-5 fw-libold">Join Our Newsletter Now</h4>
+                <p class="pb-3 fs-6 text-muted">Get E-mail updates about our latest shop and special offers.</p>
+
+                <div class="input-box mb-3">
+                    <input type="email" placeholder="Enter your email">
+                    <a href="#">Subscribe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__footer d-flex justify-content-between align-items-center">
+            <p class="fs-7 text-white">Copyright ©2023 All rights reserved | This template is made with❤️ by love</p>
+            <img src="/asset/images/payment-method.png.webp" alt="....">
+        </div>
+    </footer>
+
+    <!-- scroll up btn -->
+    <a href="#" class="scrollUpBtn"><i class="ri-arrow-up-double-line"></i></a>
+
+
+    <!-- bootstrap link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js " integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js "></script>
+
+    <!-- main js -->
+    <script src="/asset/js/main.js "></script>
+</body>
+
+</html>
+
+</html>

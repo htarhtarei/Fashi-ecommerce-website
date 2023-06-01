@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "sans-serif";
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Heebo", "sans-serif";
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul li {
+    list-style: none;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+:root {
+    --time-bg: #F4F1E9;
+    --card-bg: #EFEFEF;
+    --icon-bg: #303030;
+    --footer-bg: #191919;
+    --yellow: #E7AB3C;
+    --white: #FFFFFF;
+    --black: #252541;
+    --icon-color: #8D8D8D;
+}
+
+
+/* header */
+
+.container {
+    margin-inline: 4rem;
+    padding-block: .3rem;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.logo h2::before {
+    content: "";
+    background-color: var(--yellow);
+    width: 6px;
+    height: 7px;
+    position: absolute;
+    right: -.7rem;
+    bottom: 1rem;
+}
+
+.logo-group i {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+}
+
+.navbar {
+    background-color: var(--footer-bg)
+}
+
+.nav-item a {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    color: var(--yellow);
+}
+
+.navbar-nav {
+    margin-left: 16rem;
+}
+
+.nav-item {
+    padding-right: 2rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,165,0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: 2px solid var(--yellow);
+}
+
+
+/* =================home====================. */
+
+.carousel-item {
+    height: 100vh;
+    position: relative;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--yellow);
+}
+
+.title {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.home__content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+}
+
+.home__content p {
+    line-height: .4rem;
+    font-size: .9rem;
+}
+
+.btn-shop {
+    background-color: var(--yellow);
+    padding: .7rem 1.8rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.sale {
+    background-color: var(--yellow);
+    color: var(--white);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8rem;
+    left: 45rem;
+}
+
+.sale h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.sale-50 {
+    border: 2px dashed var(--white);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: .9rem auto;
+    padding-top: 2rem;
+}
+
+
+/* =================collection=================== */
+
+#collection {
+    padding-top: 5rem;
+}
+
+.collection__card {
+    position: relative;
+}
+
+.collection__card img {
+    height: 250px;
+}
+
+.collection__btn {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .7rem 2rem;
+    position: absolute;
+    left: 10rem;
+    bottom: 6rem;
+}
+
+.collection__btn-box::after {
+    content: "";
+    width: 370px;
+    height: 180px;
+    border: 15px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 3rem;
+    bottom: 2.3rem;
+    transform: scale(0);
+    z-index: 0;
+    transition: all .3s;
+    opacity: .6;
+}
+
+.collection__card:hover .collection__btn-box::after {
+    transform: scale(1);
+}
+
+.collection__section {
+    grid-template: max-content/1fr 1fr 1fr;
+}
+
+
+/* ===========================women==================== */
+
+#women {
+    padding-top: 5rem;
+}
+
+.women__menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+.women__menu-item a {
+    font-size: 1.2rem;
+    color: var(--icon-color);
+    padding-right: 2rem;
+}
+
+.women__menu-item .active {
+    text-decoration: underline;
+}
+
+.women__img {
+    position: relative;
+    overflow: hidden;
+    background: url(/asset/images/women-large.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+
+.women__img-detail {
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    text-align: center;
+}
+
+.women__img-detail h3 {
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.women__img-detail a {
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.women__card {
+    position: relative;
+    /* cursor: pointer; */
+}
+
+.women__card-group {
+    cursor: pointer;
+}
+
+.women__icons i {
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    padding: .6rem 1rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 5rem;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.women__icons i:hover {
+    background-color: var(--yellow);
+}
+
+.women__icons i:nth-child(2) {
+    left: 8.5rem;
+}
+
+.women__card:hover .women__icons i,
+.women__card:hover .heart {
+    opacity: 1;
+}
+
+.heart {
+    font-size: 1.3rem;
+    position: absolute;
+    top: .3rem;
+    right: .5rem;
+    opacity: 0;
+    transition: all .3s;
+    background-color: none;
+}
+
+.women__detail {
+    line-height: 1rem;
+}
+
+.swiper-pagination {
+    padding-top: 19rem;
+}
+
+.swiper-pagination span {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+}
+
+.swiper-next i,
+.swiper-prev i {
+    color: var(--icon-color);
+    position: absolute;
+    top: 30%;
+    z-index: 88;
+    font-size: 3rem;
+}
+
+.swiper-next i {
+    right: 0rem;
+}
+
+.swiper-prev i {
+    left: 0rem;
+}
+
+
+/* =================week=============== */
+
+#week {
+    height: 100vh;
+    margin-top: 5rem;
+}
+
+.week__sectiom {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.week__content {
+    padding-left: 10rem;
+}
+
+.time-calculate {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.day,
+.hrs,
+.min,
+.sec {
+    background-color: var(--white);
+    padding: .7rem 1.2rem;
+    margin-right: 2rem;
+    font-size: 2.3rem;
+    color: var(--yellow);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+
+/* ===================men====================== */
+
+#men {
+    padding-top: 5rem;
+}
+
+.men__img {
+    position: relative;
+    overflow: hidden;
+    background: url(/asset/images/man-large.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+
+.men__img-detail {
+    position: absolute;
+    top: 50%;
+    left: 6rem;
+    text-align: center;
+}
+
+.men__img-detail h3 {
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.men__img-detail a {
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.men__img-detail a:hover {
+    color: var(--yellow);
+}
+
+
+/* ======================instragram=========================== */
+
+#instragram {
+    padding-top: 5rem;
+    padding-inline: 0;
+}
+
+.instra__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper {
+    position: absolute;
+    background-color: var(--footer-bg);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instra__img:hover .img-wrapper {
+    opacity: .5;
+}
+
+
+/* ===========================blog====================== */
+
+#blog {
+    padding-top: 5rem;
+}
+
+.fs-7 {
+    font-size: .9rem;
+}
+
+.fw-libold {
+    font-weight: 600;
+}
+
+.card-text h3 {
+    font-weight: 600;
+}
+
+.card-text h3:hover {
+    color: var(--yellow);
+}
+
+.deli-detail {
+    line-height: .4rem;
+}
+
+
+/* ===================logos=================== */
+
+#logo {
+    margin-top: 5rem;
+    background-color: var(--icon-bg);
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.logo__section {
+    padding-inline: 9rem;
+}
+
+
+/* ===============footer=========================== */
+
+footer {
+    background-color: var(--footer-bg);
+}
+
+.footer__section {
+    padding-inline: 9rem;
+    padding-block: 5rem;
+    border-bottom: 1px solid var(--icon-bg);
+}
+
+.footer__footer {
+    padding-inline: 9rem;
+    padding-block: 1.5rem;
+}
+
+.footer-logo {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.footer-logo h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.footer-logo h2::after {
+    content: "";
+    background-color: var(--yellow);
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 1.5rem;
+    left: 7.2rem;
+}
+
+.socail i {
+    font-size: 1.2rem;
+    padding: .7rem;
+    border-radius: 50%;
+    background-color: var(--icon-bg);
+    margin-right: .3rem;
+}
+
+.socail i:hover {
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.information h4,
+.contact h4,
+.join h4 {
+    padding-left: 2rem;
+    color: var(--white);
+}
+
+.join p {
+    padding-left: 2rem;
+}
+
+.input-box {
+    background-color: var(--icon-bg);
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    height: 50px;
+}
+
+.input-box input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    columns: var(--white);
+}
+
+.input-box a {
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}
+
+
+/* ======scroll up btn=========== */
+
+.scrollUpBtn {
+    font-size: 1.5rem;
+    background-color: var(--yellow);
+    padding: .6rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    color: white;
+    border-radius: 5px;
+    animation: updown 3s infinite;
+    z-index: 98;
+    opacity: 0;
+}
+
+.scrollUpBtn.scrollshow {
+    opacity: 1;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,62 @@
+<div class="card-group swiper-wrapper">
+    <div class="women-card swiper-slide me-3">
+        <div class="card-img">
+            <img src="/asset/images/women-1.jpg.webp" alt="women">
+            <i class="ri-heart-3-line heart"></i>
+            <div class="card-icons">
+                <i class="ri-todo-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <h6>Sweater</h6>
+            <p class="fs-6">Converse Sweater</p>
+            <p class="fs-5 text-warning fw-bolder">$300</p>
+        </div>
+    </div>
+    <div class="women-card swiper-slide me-3">
+        <div class="card-img">
+            <img src="/asset/images/women-2.jpg.webp" alt="women">
+            <i class="ri-heart-3-line heart"></i>
+            <div class="card-icons">
+                <i class="ri-todo-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <h6>Sweater</h6>
+            <p class="fs-6">Goufffa Sweater</p>
+            <p class="fs-5 text-warning fw-bolder">$290</p>
+        </div>
+    </div>
+    <div class="women-card swiper-slide me-3">
+        <div class="card-img">
+            <img src="/asset/images/women-3.jpg.webp" alt="women">
+            <i class="ri-heart-3-line heart"></i>
+            <div class="card-icons">
+                <i class="ri-todo-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <h6>Crochet</h6>
+            <p class="fs-6">Bean Yar</p>
+            <p class="fs-5 text-warning fw-bolder">$500</p>
+        </div>
+    </div>
+    <div class="women-card swiper-slide me-3">
+        <div class="card-img">
+            <img src="/asset/images/women-4.jpg.webp" alt="women">
+            <i class="ri-heart-3-line heart"></i>
+            <div class="card-icons">
+                <i class="ri-todo-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <h6>Handbag</h6>
+            <p class="fs-6">Circle Little</p>
+            <p class="fs-5 text-warning fw-bolder">$900</p>
+        </div>
+    </div>
+</div>
